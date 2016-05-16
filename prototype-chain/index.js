@@ -22,6 +22,7 @@ console.log("Function.prototype:" + typeof Function.prototype);
 
 //环形结构
 console.log("Function.__proto__ == Function.prototype  " + (Function.__proto__ == Function.prototype));
+console.log("Function.__proto__ == Object.__proto__  " + (Function.__proto__ == Object.__proto__ ));
 
 
 function printPrototypeChain(obj){
