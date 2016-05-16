@@ -2,6 +2,7 @@
 //这个“代码段”其实分三种情况——全局代码，函数体，eval代码。
 
 //javascript没有块级作用域
+//作用域在函数定义时就已经确定了。而不是在函数调用时确定
 
 //执行上下文：
 //1.变量、函数表达式——变量声明，默认赋值为undefined；
@@ -28,3 +29,23 @@ function f2(name) {
 }
 
 f2("tom");
+
+
+var aa = 10;
+
+function fn() {
+  var b = 20;
+
+  function bar() {
+    console.log("aa:" + aa + "  b:" + b);
+  }
+
+  return bar;
+}
+
+var x = fn();
+b = 200;
+x();
+
+
+
