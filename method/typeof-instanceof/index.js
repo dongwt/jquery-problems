@@ -16,6 +16,7 @@
 //instanceof表示的就是一种继承关系，或者原型链的结构
 
 console.log("typeof");
+console.log("undefined:" + typeof undefined);
 console.log("NULL:" + typeof null);
 console.log("Array:" + typeof new Array());
 console.log("Object:" + typeof new Object());
